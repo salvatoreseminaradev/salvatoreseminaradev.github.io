@@ -512,6 +512,93 @@ ul { list-style: none; }
   font-weight: 700;
 }
 
+/* ── PROJECTS ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: border-color .2s;
+}
+
+.project-card:hover { border-color: var(--accent); }
+
+.project-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+
+.project-meta {
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(200,145,58,.1);
+  border: 1px solid rgba(200,145,58,.2);
+  padding: .15rem .6rem;
+  border-radius: 100px;
+}
+
+.project-link {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  transition: color .18s;
+  line-height: 1;
+}
+
+.project-link:hover { color: var(--accent-lt); }
+
+.project-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: .65rem;
+}
+
+.project-desc {
+  font-size: .9rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.project-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+.project-github {
+  font-size: .8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color .18s;
+  letter-spacing: .01em;
+}
+
+.project-github:hover { color: var(--accent-lt); }
+
 /* ── CONTACT ── */
 .contact-body { max-width: 580px; }
 
